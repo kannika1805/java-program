@@ -13,6 +13,6 @@ public class Reverse{
         }
         for(int i=0;i<n;i++)
             System.out.println("reverse"+a[i]);
-        
+    sc.close();    
     }
 }
