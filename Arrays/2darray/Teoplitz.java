@@ -5,7 +5,7 @@ public class Teoplitz {
         int r=sc.nextInt();
         int a[][]=new int[r][r];
         for(int i=0;i<r;i++){
-            for(int j=0;j<r;j++){
+            for(int j=0;j<r;j++){ 
                 a[i][j]=sc.nextInt();
             }
         } int count=0;
@@ -14,7 +14,7 @@ public class Teoplitz {
             if(element==a[i][i]){
                 count++;
             }else{
-                break;// all diagonal elements are same//
+                break;// all diagonal elements are same in arrray//
             }
         }
         if(count==r){
