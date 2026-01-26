@@ -13,13 +13,13 @@ public class Rotate90anti {
         for(int j=i+1;j<r;j++){
             if(i!=j){
                 int temp=a[i][j];
-                a[i][j]=a[j][i];// s1: take transpores .s2: reverse the each column//
+                a[i][j]=a[j][i];// s1: take transpores .s2:reverse each clumn//
                 a[j][i]=temp;
             }
         }
     } 
-    for(int j=0;j<r;j++){
-        for(int i=0;i<r/2;i++){
+    for(int i=0;i<r/2;i++){
+        for(int j=0;j<r;i++){
             int temp=a[i][j];
             a[i][j]=a[r-1-i][j];
             a[r-1-i][j]=temp;
@@ -27,8 +27,9 @@ public class Rotate90anti {
     }
     for(int i=0;i<r;i++){
         for(int j=0;j<r;j++){
-            System.out.print(a[i][j]);        }
+            System.out.print(a[i][j]+" ");        }
     }
+    System.out.println();
     sc.close();
  }
 }
