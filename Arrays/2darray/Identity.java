@@ -12,7 +12,7 @@ public class Identity {
         for(int i=0;i<r;i++){
             for(int j=0;j<r;j++){
                 if(i==j && a[i][j]!=1){// diagonal ele is 1 and others 0//
-                    identity=true;
+                    identity=false;
                     break;
                 }else if(i!=j && a[i][j]!=0){
                     identity=false;
