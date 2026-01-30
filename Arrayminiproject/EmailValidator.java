@@ -1,6 +1,6 @@
 package Arrayminiproject;
 import java.util.Scanner;
-public class EmailValidator {
+public class EmailValidator{
     public static void main(String[] args){
         Scanner sc=new Scanner(System.in);
         String email=sc.nextLine();
@@ -28,7 +28,7 @@ public class EmailValidator {
         if(count==1){
             special=true;
         }
-    
+        }
       
         if(isletter && special && digit){
             System.out.println("VALID EMAIL ID");
@@ -36,6 +36,6 @@ public class EmailValidator {
             System.out.println("INVALID EMAIL ID");
         }
         sc.close();
-
     }
+
 }
